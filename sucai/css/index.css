@@ -1,0 +1,375 @@
+.header{
+    width: 100%;
+    height: 580px;
+    position: relative;
+}
+.banner{
+    width: 100%;
+    height: 580px;
+}
+.headerWrap{
+    width: 100%;
+    height: 89px;
+    background: url("../img/nav-b.png") repeat-X;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 555;
+}
+.headerCon{
+    width: 100%;
+
+}
+.logo{
+    float: left;
+    margin-top: 18px;
+}
+.logo img{
+    height: 100%;
+}
+.headerCon ul{
+    float: right;
+    line-height: 89px;
+}
+.headerCon ul li{
+    float: left;
+}
+.headerCon ul li a{
+    position: relative;
+    display: block;
+    padding: 0 30px ;
+    font-size: 18px;
+    color:#fff;
+    opacity: 0.7;
+}
+.headerCon ul li a span{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+    -webkit-transition: transform 0.1s linear;
+    transition: transform 0.1s linear;
+}
+.headerCon ul li a:hover span{
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+}
+.headerCon ul li a:hover{
+    opacity: 1;
+}
+.list{
+    width: 100%;
+    padding-top: 30px;
+}
+.list ul{
+    text-align: center;
+    width: 100%;
+}
+.list ul li{
+    width: 23%;
+    display: inline-block;
+    vertical-align: top;
+}
+.list ul li span{
+    display: block;
+    width: 152px;
+    height: 124px;
+    margin: 0 auto;
+    background: url("../img/icon-24.png") no-repeat;
+}
+.list ul li span.pic1{
+    background-position: 0 -128px;
+}
+.list ul li span.pic2{
+    background-position: -300px -128px;
+}
+.list ul li span.pic3{
+    background-position: -604px -128px;
+}
+.list ul li h4{
+    font-size: 18px;
+    color: #ff6A00;
+    padding: 10px 0 0 0;
+}
+.list ul li p{
+    _display: block;
+    height: 24px;
+    color: #333;
+    padding: 5px 0;
+}
+.channel ul{
+    text-align: center;
+}
+.channel li{
+    display:inline-block;
+    max-width: 20%;
+    margin: 0 1%;
+}
+.channel li img{
+    width: 100%;
+}
+@media all and (min-width: 1000px){
+    .headerCon{
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+.banner .bannerInner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.banner .bannerInner div{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner .bannerInner .bannerInner1{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: #ff6A00;
+    text-align: center;
+    z-index: 1;
+}
+.banner .bannerInner .bannerInner2{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: #183e84;
+    z-index: 0;
+}
+.banner .bannerInner .bannerInner1 .bannerImg1{
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 23%;
+}
+@keyframes move {
+    0%{
+        left:23%;
+    }
+    100%{
+        left: 14%;
+    }
+}
+.banner .bannerInner .bannerInner1 .bannerText1{
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left:50%;
+    margin-left: -216px;
+}
+.banner .bannerInner .bannerInner2 .bannerImg2{
+    display: block;
+    position: absolute;
+    left: 5%;
+}
+@keyframes move1{
+    0%{
+        left:2%;
+    }
+    100%{
+        left: 5%;
+    }
+}
+.banner .bannerInner .bannerInner2 .bannerText2{
+    display: block;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+}
+@keyframes move2{
+    0%{
+        left:60%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+.banner .bannerInner .bannerInner2 .bannerText2 p{
+    display: block;
+    padding-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    clear: both;
+}
+.banner .focus{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    margin-left: -25px;
+    z-index: 500;
+}
+.banner .focus li{
+    display: inline-block;
+    width: 24px;
+    height: 5px;
+    background: #000;
+    opacity: 0.4;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.banner .left{
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    display: block;
+    background: url("../img/l-btn.png") no-repeat;
+    z-index: 500;
+}
+.banner .right{
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    right:5%;
+    top: 50%;
+    display: block;
+    background: url("../img/r-btn.png") no-repeat;
+    z-index: 500;
+}
+.banner .focus li.select{
+    background: #fff;
+}
+@media all and (max-width: 760px){
+    .logo{
+        height: 28px;
+        margin-top: 5px;
+    }
+    .headerCon ul{
+        display: none;
+    }
+    .headerWrap{
+        height: 49px;
+    }
+    .list ul li span{
+        width: 76px;
+        height: 64px;
+        background-size: 370px 126px;
+    }
+    .list ul li span.pic1{
+        background-position: 0 -64px;
+    }
+    .list ul li span.pic2{
+        background-position: -158px -64px;
+    }
+    .list ul li span.pic3{
+        background-position: -312px -64px;
+    }
+    .list ul li h4{
+        font-size: 16px;
+    }
+    .banner{
+        height: 280px;
+    }
+    .banner .bannerInner .bannerInner2 .bannerImg2{
+        width: 290px;
+        height: 252px;
+        left: 30%;
+        overflow: hidden;
+    }
+    @keyframes move1{
+        0%{
+            left:10%;
+        }
+        100%{
+            left: 20%;
+        }
+    }
+    .banner .bannerInner .bannerInner2 .bannerImg2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .banner .bannerInner .bannerInner2 .bannerText2{
+        width: 117px;
+        height: 48px;
+    }
+    @keyframes move2{
+        0%{
+            left:70%;
+        }
+        100%{
+            left: 65%;
+        }
+    }
+    .banner .bannerInner .bannerInner2 .bannerText2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .banner .bannerInner .bannerInner2 .bannerText2 p{
+        display: none;
+    }
+    .banner .bannerInner .bannerInner1 .bannerImg1 img{
+        width: 50%;
+        height: 50%;
+    }
+    .banner .bannerInner .bannerInner1 .bannerImg1{
+        left:20%;
+        top: 20%;
+    }
+    .banner .bannerInner .bannerInner1 .bannerText1 img{
+        width: 50%;
+        height: 50%;
+    }
+    .banner .focus{
+        bottom:2%;
+        left: 50%;
+    }
+}
+@media all and (max-width: 1100px) and (min-width: 800px){
+    .banner .bannerInner .bannerInner2 .bannerImg2{
+        left:0;
+    }
+    @keyframes move1{
+        0%{
+            left:0;
+        }
+        100%{
+            left: 3%;
+        }
+    }
+    .banner .bannerInner .bannerInner2 .bannerText2{
+        left:70%
+    }
+    @keyframes move2{
+        0%{
+            left:70%;
+        }
+        100%{
+            left: 60%;
+        }
+    }
+}
+@media all and (max-width: 800px) and (min-width: 760px){
+    .banner .bannerInner .bannerInner2 .bannerImg2{
+        left:-10%;
+    }
+    @keyframes move1{
+        0%{
+            left:-10%;
+        }
+        100%{
+            left: -5%;
+        }
+    }
+    .banner .bannerInner .bannerInner2 .bannerText2{
+        left:70%
+    }
+    @keyframes move2{
+        0%{
+            left:70%;
+        }
+        100%{
+            left: 60%;
+        }
+    }
+}

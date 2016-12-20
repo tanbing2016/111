@@ -1,0 +1,25 @@
+@percentage:100%;
+@color:#fff;
+@url:"../sucai/img";
+.box_shadow(@x:0,@y:0,@blur:0,@spread:0,@color:#000){
+  -webkit-box-shadow: @x @y @blur @spread @color;
+  -moz-box-shadow: @x @y @blur @spread @color;
+  box-shadow: @x @y @blur @spread @color;
+}
+.transition(@property:all,@duration:1s,@timing-function:ease,@delay:0s){
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  transition: @arguments;
+}
+.css3(@k,@v){
+  -webkit-@{k}:@v;
+  -moz-@{k}:@v;
+  @{k}:@v;
+}
+.pos(@position:absolute,@left:0,@right:auto,@top:0,@bottom:auto,@zIndex:1){
+  position: @position;
+  left: @left;
+  right: @right;
+  top: @top;
+  bottom: @bottom;
+}
