@@ -241,6 +241,12 @@
     background: #fff;
 }
 @media all and (max-width: 760px){
+    .header{
+        height: 280px;
+    }
+    .left,.right{
+        display: none;
+    }
     .logo{
         height: 28px;
         margin-top: 5px;
